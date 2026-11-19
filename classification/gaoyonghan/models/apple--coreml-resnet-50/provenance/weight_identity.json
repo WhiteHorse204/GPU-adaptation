@@ -1,0 +1,42 @@
+{
+  "sequence": 73,
+  "files": [
+    {
+      "path": "Resnet50Int8LUT.mlmodel",
+      "bytes": 25677037,
+      "matches_source": true,
+      "comparison": "identical local inode"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1138,
+      "matches_source": true,
+      "comparison": "identical local inode"
+    },
+    {
+      "path": ".gitattributes",
+      "bytes": 1519,
+      "matches_source": true,
+      "comparison": "identical local inode"
+    },
+    {
+      "path": "Resnet50.mlmodel",
+      "bytes": 102586812,
+      "matches_source": true,
+      "comparison": "identical local inode"
+    },
+    {
+      "path": "Resnet50FP16.mlmodel",
+      "bytes": 51313342,
+      "matches_source": true,
+      "comparison": "identical local inode"
+    },
+    {
+      "path": "Resnet50Headless.mlmodel",
+      "bytes": 94367931,
+      "matches_source": true,
+      "comparison": "identical local inode"
+    }
+  ],
+  "mismatches": []
+}

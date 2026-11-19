@@ -1,0 +1,9 @@
+{
+  "python": "3.9.25",
+  "requirements": "environments/e02-m24-ultralytics8021/requirements.txt",
+  "expected": "environments/e02-m24-ultralytics8021/expected.json",
+  "local_packages": [],
+  "original_python": "/home/ubuntu/gaoyonghan/gpu/.venv-m24-ultralytics8021/bin/python",
+  "torch": "2.2.2+cu121",
+  "python_version_scope": "Pinned to original interpreter version"
+}

@@ -1,0 +1,42 @@
+{
+  "sequence": 38,
+  "files": [
+    {
+      "path": "inference.pdiparams",
+      "bytes": 212170944,
+      "matches_source": true,
+      "comparison": "identical local inode"
+    },
+    {
+      "path": "config.json",
+      "bytes": 4535,
+      "matches_source": true,
+      "comparison": "identical local inode"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2685,
+      "matches_source": true,
+      "comparison": "identical local inode"
+    },
+    {
+      "path": ".gitattributes",
+      "bytes": 1629,
+      "matches_source": true,
+      "comparison": "identical local inode"
+    },
+    {
+      "path": "inference.yml",
+      "bytes": 1482,
+      "matches_source": true,
+      "comparison": "identical local inode"
+    },
+    {
+      "path": "inference.json",
+      "bytes": 1592566,
+      "matches_source": true,
+      "comparison": "identical local inode"
+    }
+  ],
+  "mismatches": []
+}

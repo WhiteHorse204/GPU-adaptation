@@ -1,0 +1,102 @@
+{
+  "sequence": 25,
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 0,
+      "matches_source": true,
+      "comparison": "identical local inode"
+    },
+    {
+      "path": "README.md",
+      "bytes": 16765,
+      "matches_source": true,
+      "comparison": "identical local inode"
+    },
+    {
+      "path": ".gitattributes",
+      "bytes": 2501,
+      "matches_source": true,
+      "comparison": "identical local inode"
+    },
+    {
+      "path": "model.pth",
+      "bytes": 534747653,
+      "matches_source": true,
+      "comparison": "identical local inode"
+    },
+    {
+      "path": "img/annotation_bbc.jpg",
+      "bytes": 495834,
+      "matches_source": true,
+      "comparison": "identical local inode"
+    },
+    {
+      "path": "img/annotation_airbnb.jpg",
+      "bytes": 499358,
+      "matches_source": true,
+      "comparison": "identical local inode"
+    },
+    {
+      "path": "img/category_old.png",
+      "bytes": 205404,
+      "matches_source": true,
+      "comparison": "identical local inode"
+    },
+    {
+      "path": "img/boxes_musique.png",
+      "bytes": 181108,
+      "matches_source": true,
+      "comparison": "identical local inode"
+    },
+    {
+      "path": "img/.DS_Store",
+      "bytes": 6148,
+      "matches_source": true,
+      "comparison": "identical local inode"
+    },
+    {
+      "path": "img/boxes_calendar.png",
+      "bytes": 205969,
+      "matches_source": true,
+      "comparison": "identical local inode"
+    },
+    {
+      "path": "img/demo_agent_execution.mov",
+      "bytes": 26700927,
+      "matches_source": true,
+      "comparison": "identical local inode"
+    },
+    {
+      "path": "img/overall.png",
+      "bytes": 143669,
+      "matches_source": true,
+      "comparison": "identical local inode"
+    },
+    {
+      "path": "img/click_hotel.png",
+      "bytes": 475136,
+      "matches_source": true,
+      "comparison": "identical local inode"
+    },
+    {
+      "path": "img/click_calendar.png",
+      "bytes": 1591422,
+      "matches_source": true,
+      "comparison": "identical local inode"
+    },
+    {
+      "path": "img/overall_old.png",
+      "bytes": 176475,
+      "matches_source": true,
+      "comparison": "identical local inode"
+    },
+    {
+      "path": "img/category.png",
+      "bytes": 192876,
+      "matches_source": true,
+      "comparison": "identical local inode"
+    }
+  ],
+  "mismatches": []
+}

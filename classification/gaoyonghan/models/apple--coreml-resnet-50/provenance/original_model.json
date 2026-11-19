@@ -1,0 +1,34 @@
+{
+  "sequence": 73,
+  "model_id": "apple/coreml-resnet-50",
+  "task": "image_classification",
+  "task_name": "图像分类",
+  "reported_result": "已跳过（无结果）",
+  "reference": "未核实对应模型卡指标",
+  "model_source": "/data2/gaoyonghan/model inference for GPU adaptation/model/_shared/model_index/apple/coreml-resnet-50",
+  "model_exists_at_build": true,
+  "dataset": {
+    "id": null,
+    "relation": null,
+    "split": null,
+    "note": "计划：ImageNet-1k / ILSVRC 2012\n未评测，官方对应关系待核实"
+  },
+  "environment_id": null,
+  "runner_family": "skipped",
+  "final_result_sources": [],
+  "code": {
+    "source": null,
+    "sha256": null,
+    "recorded_sha256": null,
+    "attestation": "code_missing",
+    "status_source": null,
+    "selection": "no_metric_match",
+    "archive": null
+  },
+  "support_files": [],
+  "final_scorer": null,
+  "backend_package": "classification8_eval",
+  "readiness": "intentionally_skipped",
+  "launch_status": "skipped",
+  "metadata_warning": null
+}

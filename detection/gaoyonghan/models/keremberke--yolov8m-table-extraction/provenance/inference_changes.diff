@@ -1,0 +1,24 @@
+--- original_inference.py
++++ inference/native/run_m24_native.py
+@@ -14,9 +14,9 @@
+ 
+ from run_m07_native import sha, write
+ 
+-OUT = Path('/home/ubuntu/gaoyonghan/gpu/results/m24_native8021_v1')
+-MODEL = Path('/data2/gaoyonghan/gpu/model/keremberke/yolov8m-table-extraction')
+-ARCHIVE = Path('/data2/gaoyonghan/gpu/dataset/table_extraction_v2_valid/data/valid.zip')
++OUT = Path('/data2/gaoyonghan/gpu_model_standalone_20261110/release/model/检测/keremberke--yolov8m-table-extraction/results/run_001/m024')
++MODEL = Path('/data2/gaoyonghan/gpu_model_standalone_20261110/release/model/检测/keremberke--yolov8m-table-extraction/resources/model_index/keremberke/yolov8m-table-extraction')
++ARCHIVE = Path('/home/ubuntu/文档/ChatGPT/idea 2/outputs/launch_audit_20261005/migration_inputs/datasets/table_extraction_v2_valid/data/valid.zip')
+ WEIGHT_SHA = '93b9ab71462a376214872d2f6000775e10abee87441e5e8a3c3f5e4bbfff3489'
+ GT_SHA = '7488c82780ce2c060c51aef378ce32344196e0da4f9bc9d08afb216f7a80202c'
+ SPEC = {
+@@ -121,7 +121,7 @@
+     settings = {'datasets_dir': str(OUT), 'weights_dir': str(MODEL), 'runs_dir': str(OUT),
+                 'sync': False, 'uuid': 0, 'settings_version': '0.0.1'}
+     (config / 'settings.yaml').write_text(yaml.safe_dump(settings, sort_keys=False))
+-    font = Path('/home/ubuntu/.config/Ultralytics/Arial.ttf')
++    font = Path('/data2/gaoyonghan/gpu_model_standalone_20261110/release/model/检测/keremberke--yolov8m-table-extraction/resources/runtime/assets/fonts/Arial.ttf')
+     assert font.is_file(), 'Missing cached Arial.ttf; do not start an implicit network download'
+     if not (config / font.name).exists():
+         (config / font.name).symlink_to(font)

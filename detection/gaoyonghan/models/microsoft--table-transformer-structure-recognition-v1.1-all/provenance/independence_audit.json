@@ -1,0 +1,27 @@
+{
+  "sequence": 15,
+  "model_id": "microsoft/table-transformer-structure-recognition-v1.1-all",
+  "source_archive_hash_matches": true,
+  "source_archive_sha256": "8349702c67df600fbc01d7c7a169d9ec3336d63359e50537a4eab9cae21eeb43",
+  "prepared_entry_source_sha256": "acbcb0da14bdaa8a9c8c78ae82e25480edb34954750041e75a434adc26d02d8d",
+  "local_entry_sha256": "3f3571ff527a264f0942f386880ee67fdb5dba32fac9691dc880780ddf23db48",
+  "local_entry": "inference/native/run_m15_native_tight.py",
+  "central_dispatch_in_entry": false,
+  "unexpected_external_links": [],
+  "declared_dataset_links": [
+    {
+      "path": "resources/runtime/assets/workspace/official_sources/object_detection/WildDet3D/data/in_the_wild",
+      "target": "/data2/gaoyonghan/gpu/dataset/wilddet3d_val"
+    }
+  ],
+  "broken_links": [],
+  "path_template_count": 276,
+  "state": "entrypoint_verified_full_run_pending",
+  "validation": {
+    "returncode": 0,
+    "python": "/home/ubuntu/gaoyonghan/miniconda3/envs/object-detection-hf-v2/bin/python",
+    "checked_at": "2026-11-10T15:38:01.269696+08:00",
+    "scope": "native help/import/path check only; not full inference"
+  },
+  "smoke_verification": null
+}

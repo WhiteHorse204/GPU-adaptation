@@ -1,0 +1,10 @@
+{
+  "sequence": 73,
+  "model_id": "apple/coreml-resnet-50",
+  "task": "classification",
+  "commands": [],
+  "single_model_sample": false,
+  "smoke_commands": [],
+  "state": "historically_skipped",
+  "reason": "Historical record: skipped. Weights and provenance are preserved; no verified inference entry exists."
+}

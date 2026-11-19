@@ -1,0 +1,15 @@
+--- original_inference.py
++++ inference/native/run_m38_omni.py
+@@ -15,9 +15,9 @@
+ from run_model import core, digest, file_hash
+ 
+ HERE = Path(__file__).resolve().parent
+-DATA = Path('/data2/gaoyonghan/gpu/dataset/omnidocbench_eval')
+-MODEL = Path('/data2/gaoyonghan/gpu/model/PaddlePaddle/PP-DocLayoutV2')
+-OUT = Path('/home/ubuntu/gaoyonghan/gpu/results/m38_omni_native_v1')
++DATA = Path('/home/ubuntu/文档/ChatGPT/idea 2/outputs/launch_audit_20261005/migration_inputs/datasets/omnidocbench_eval')
++MODEL = Path('/data2/gaoyonghan/gpu_model_standalone_20261110/release/model/检测/PaddlePaddle--PP-DocLayoutV2/resources/model_index/PaddlePaddle/PP-DocLayoutV2')
++OUT = Path('/data2/gaoyonghan/gpu_model_standalone_20261110/release/model/检测/PaddlePaddle--PP-DocLayoutV2/results/run_001/m038/native')
+ DIRECT = {'equation_isolated': 'display_formula', 'footer': 'footer',
+           'page_footnote': 'footnote', 'equation_caption': 'formula_number',
+           'header': 'header', 'page_number': 'number', 'table': 'table'}

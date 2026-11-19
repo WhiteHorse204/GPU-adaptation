@@ -1,0 +1,27 @@
+{
+  "sequence": 24,
+  "model_id": "keremberke/yolov8m-table-extraction",
+  "source_archive_hash_matches": true,
+  "source_archive_sha256": "75017621009a944903ddd90dc9ff697bf6db61f31ecf1f2799f8d10dc6166dc0",
+  "prepared_entry_source_sha256": "d83f6766ecbba6733514dd6d61211f317ecdfefabd16e46852ce34c751d37425",
+  "local_entry_sha256": "ca7817dc9dde50d87ccccc72a0008eb6172b1f41588c319d863edf3651e10c3a",
+  "local_entry": "inference/native/run_m24_native.py",
+  "central_dispatch_in_entry": false,
+  "unexpected_external_links": [],
+  "declared_dataset_links": [
+    {
+      "path": "resources/runtime/assets/workspace/official_sources/object_detection/WildDet3D/data/in_the_wild",
+      "target": "/data2/gaoyonghan/gpu/dataset/wilddet3d_val"
+    }
+  ],
+  "broken_links": [],
+  "path_template_count": 279,
+  "state": "entrypoint_verified_full_run_pending",
+  "validation": {
+    "returncode": 0,
+    "python": "/home/ubuntu/gaoyonghan/gpu/.venv-m24-ultralytics8021/bin/python",
+    "checked_at": "2026-11-10T15:38:36.331579+08:00",
+    "scope": "native help/import/path check only; not full inference"
+  },
+  "smoke_verification": null
+}

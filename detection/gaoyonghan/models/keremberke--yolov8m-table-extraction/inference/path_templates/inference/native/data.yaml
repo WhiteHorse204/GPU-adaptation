@@ -1,0 +1,7 @@
+path: __MODEL_ROOT__/resources/runtime/assets/prepared/prepared_m24_root
+train: __MODEL_ROOT__/resources/runtime/assets/workspace/results/m24_native8021_v1/run_20260914_194044_047863/val.txt
+val: __MODEL_ROOT__/resources/runtime/assets/workspace/results/m24_native8021_v1/run_20260914_194044_047863/val.txt
+names:
+- bordered
+- borderless
+nc: 2
