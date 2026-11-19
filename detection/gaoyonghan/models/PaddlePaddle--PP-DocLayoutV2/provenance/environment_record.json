@@ -1,9 +1,0 @@
-{
-  "python": "3.10.19",
-  "requirements": "environments/e21-paddleocr-vl16/requirements.txt",
-  "expected": "environments/e21-paddleocr-vl16/expected.json",
-  "local_packages": [],
-  "original_python": "/home/ubuntu/gaoyonghan/miniconda3/envs/paddleocr-vl16/bin/python",
-  "torch": "2.6.0+cpu",
-  "python_version_scope": "Pinned to original interpreter version"
-}

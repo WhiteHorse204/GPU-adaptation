@@ -63,9 +63,3 @@
 - [`timm--convnext_tiny.fb_in22k`](../models/timm--convnext_tiny.fb_in22k/)
 - [`timm--csatv2.r512_in1k`](../models/timm--csatv2.r512_in1k/)
 - [`timm--tf_efficientnetv2_s.in21k`](../models/timm--tf_efficientnetv2_s.in21k/)
-
-## 暂缓
-
-- [`apple--coreml-resnet-50`](../models/apple--coreml-resnet-50/)
-- [`viddexa--nsfw-detection-mini`](../models/viddexa--nsfw-detection-mini/)
-- [`viddexa--nsfw-detection-nano`](../models/viddexa--nsfw-detection-nano/)

@@ -1,6 +1,6 @@
 {
   "sequence": 70,
-  "state": "organized_pending_full_validation",
+  "state": "verified_on_a100",
   "native_entries": [
     "run_model.py"
   ],
@@ -11,5 +11,6 @@
   ],
   "omitted_external_links": [],
   "path_templates": 3,
-  "new_project_full_inference_executed": false
+  "new_project_full_inference_executed": false,
+  "environment": "e30"
 }

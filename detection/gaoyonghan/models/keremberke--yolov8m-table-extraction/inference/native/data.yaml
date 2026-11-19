@@ -1,7 +1,0 @@
-path: /mnt/aoss/model inference for GPU adaptation/detection/gaoyonghan/models/keremberke--yolov8m-table-extraction/resources/runtime/assets/prepared/prepared_m24_root
-train: /mnt/aoss/model inference for GPU adaptation/detection/gaoyonghan/models/keremberke--yolov8m-table-extraction/resources/runtime/assets/workspace/results/m24_native8021_v1/run_20260914_194044_047863/val.txt
-val: /mnt/aoss/model inference for GPU adaptation/detection/gaoyonghan/models/keremberke--yolov8m-table-extraction/resources/runtime/assets/workspace/results/m24_native8021_v1/run_20260914_194044_047863/val.txt
-names:
-- bordered
-- borderless
-nc: 2

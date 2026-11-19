@@ -79,16 +79,6 @@
 - [`allenai--WildDet3D`](../models/allenai--WildDet3D/)
 - [`jameslahm--yoloe`](../models/jameslahm--yoloe/)
 
-## 暂缓
+## e30
 
-- [`erax-ai--EraX-NSFW-V1.0`](../models/erax-ai--EraX-NSFW-V1.0/)
-- [`keras-io--Object-Detection-RetinaNet`](../models/keras-io--Object-Detection-RetinaNet/)
-- [`keremberke--yolov8m-table-extraction`](../models/keremberke--yolov8m-table-extraction/)
-- [`microsoft--table-transformer-structure-recognition`](../models/microsoft--table-transformer-structure-recognition/)
-- [`microsoft--table-transformer-structure-recognition-v1.1-all`](../models/microsoft--table-transformer-structure-recognition-v1.1-all/)
-- [`PaddlePaddle--PP-DocLayoutV2`](../models/PaddlePaddle--PP-DocLayoutV2/)
-- [`racineai--UI-DETR-1`](../models/racineai--UI-DETR-1/)
-
-## 待验证
-
-- [`google--owlvit-large-patch14`](../models/google--owlvit-large-patch14/)（e30 环境迁移中）
+- [`google--owlvit-large-patch14`](../models/google--owlvit-large-patch14/)
