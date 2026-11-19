@@ -4,8 +4,10 @@
 
 ## 项目整体结构
 
+仓库按 GPU 平台分目录。下文的项目根目录指对应的平台目录。使用 A100 时，先从仓库根目录执行 `cd a100`，再运行文中的命令。
+
 ```text
-model inference for GPU adaptation/
+GPU-adaptation/a100/
 ├── README.md
 ├── dataset/
 │   └── <共享数据集和标注>

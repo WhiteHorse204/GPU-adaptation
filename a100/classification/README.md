@@ -1,7 +1,7 @@
 # Classification project requirements
 
 ```text
-model inference for GPU adaptation/
+GPU-adaptation/a100/
 ├── dataset/                        # Existing shared datasets
 └── classification/
     ├── README.md

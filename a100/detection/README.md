@@ -1,7 +1,7 @@
 # Detection project requirements
 
 ```text
-model inference for GPU adaptation/
+GPU-adaptation/a100/
 ├── dataset/                        # Existing shared datasets
 └── detection/
     ├── evaluate.py                 # Shared COCO bbox AP evaluator
@@ -56,7 +56,7 @@ model-specific. There is no central model inference dispatcher.
 
 All detection models that participate in the project evaluation use:
 
-    python detection/evaluate.py --run-dir "/mnt/aoss/model inference for GPU adaptation/detection/<contributor>/models/<model-name>/result/run_001"
+    python detection/evaluate.py --run-dir "detection/<contributor>/models/<model-name>/result/run_001"
 
 Each model's inference.py must convert its native output to the project
 standard COCO bbox format before evaluation. detection/evaluate.py computes
