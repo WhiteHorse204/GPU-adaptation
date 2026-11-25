@@ -13,7 +13,7 @@ os.environ.setdefault('CUDA_VISIBLE_DEVICES', GPU_ID)
 os.environ.setdefault('HF_ENDPOINT', 'https://hf-mirror.com')
 os.environ.setdefault('HF_HUB_CACHE', str(Path(__file__).resolve().parents[1] / 'weights/.runtime_cache'))
 import sys
-sys.path.insert(0, str(Path(__file__).resolve().parent / 'vendor'))
+sys.path.insert(0, str(Path(__file__).resolve().parent / 'upstream'))
 import torch
 from huggingface_hub import snapshot_download
 import numpy as np

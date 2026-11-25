@@ -51,7 +51,7 @@ def main():
         def forward(inputs): return model(**inputs)
         def recover(value,size): return processor.post_process_depth_estimation(value,target_sizes=[size])[0]['predicted_depth']
     else:
-        sys.path.insert(0,str(HERE/'inference/vendor'))
+        sys.path.insert(0,str(HERE/'inference/upstream'))
         from depth_pro.depth_pro import create_model_and_transforms, DEFAULT_MONODEPTH_CONFIG_DICT
         model, transform = create_model_and_transforms(replace(DEFAULT_MONODEPTH_CONFIG_DICT,checkpoint_uri=str(weights/'depth_pro.pt')),device=device)
         model.eval()

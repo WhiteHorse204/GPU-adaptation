@@ -65,47 +65,47 @@
       "call": "model = UniverSat.from_pretrained(str(snapshot), compile=False)"
     },
     {
-      "file": "inference/vendor/UniverSat/hubconf.py",
+      "file": "inference/upstream/UniverSat/hubconf.py",
       "line": 10,
       "call": "model = UniverSat.from_pretrained(\"g-astruc/UniverSat\").eval()"
     },
     {
-      "file": "inference/vendor/UniverSat/hubconf.py",
+      "file": "inference/upstream/UniverSat/hubconf.py",
       "line": 14,
       "call": "model = torch.hub.load(\"gastruc/UniverSat\", \"universat\", pretrained=True).eval()"
     },
     {
-      "file": "inference/vendor/UniverSat/hubconf.py",
+      "file": "inference/upstream/UniverSat/hubconf.py",
       "line": 416,
       "call": "model = UniverSat.from_pretrained(\"g-astruc/UniverSat\").eval()"
     },
     {
-      "file": "inference/vendor/UniverSat/hubconf.py",
+      "file": "inference/upstream/UniverSat/hubconf.py",
       "line": 456,
       "call": "return from_pretrained("
     },
     {
-      "file": "inference/vendor/UniverSat/hubconf.py",
+      "file": "inference/upstream/UniverSat/hubconf.py",
       "line": 469,
       "call": "def from_pretrained(repo_id: str = _HF_REPO_ID, **kwargs):"
     },
     {
-      "file": "inference/vendor/UniverSat/hubconf.py",
+      "file": "inference/upstream/UniverSat/hubconf.py",
       "line": 475,
       "call": "model = torch.hub.load(\"gastruc/UniverSat\", \"from_pretrained\").eval()"
     },
     {
-      "file": "inference/vendor/UniverSat/hubconf.py",
+      "file": "inference/upstream/UniverSat/hubconf.py",
       "line": 485,
       "call": "return UniverSat.from_pretrained(repo_id, **kwargs)"
     },
     {
-      "file": "inference/vendor/UniverSat/src/LP_eval.py",
+      "file": "inference/upstream/UniverSat/src/LP_eval.py",
       "line": 740,
       "call": "model = hubconf.UniverSat.from_pretrained(repo_id).model"
     },
     {
-      "file": "inference/vendor/UniverSat/src/LP_eval_conv.py",
+      "file": "inference/upstream/UniverSat/src/LP_eval_conv.py",
       "line": 731,
       "call": "model = hubconf.UniverSat.from_pretrained(repo_id).model"
     }

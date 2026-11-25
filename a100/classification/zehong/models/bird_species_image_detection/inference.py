@@ -23,10 +23,9 @@ def main():
     p.add_argument('--num-workers', '--workers',type=int,default=NUM_WORKERS)
     p.add_argument('--max-samples',type=int,help='Debug subset; omit only for an intended full evaluation')
     p.add_argument('--preflight',action='store_true',help='Check paths only; no model loading or inference')
-    p.add_argument('--image',type=Path,default=HERE/'inference/assets/demo_cat.jpg',help='Artwork demo image, no GT/accuracy')
     a = p.parse_args()
     # Asset paths are model-relative; absolute paths remain supported.
-    for _name in ('weights', 'dataset_root', 'dataset', 'bundle', 'vision_weights', 'hf_cache', 'image'):
+    for _name in ('weights', 'dataset_root', 'dataset', 'bundle', 'vision_weights', 'hf_cache'):
         _path = getattr(a, _name, None)
         if isinstance(_path, Path) and not _path.is_absolute():
             setattr(a, _name, (HERE / _path).resolve())
@@ -37,8 +36,7 @@ def main():
         p.error('Output directory already exists; use a new --output-root to preserve previous results')
     if a.max_samples is not None and a.max_samples<1:p.error('--max-samples must be positive')
     if a.preflight:
-        required=[a.weights]
-        required += [a.image] if KIND=='artwork' else [a.dataset_root]
+        required=[a.weights, a.dataset_root]
         missing=[str(path) for path in required if not path.exists()]
         print(json.dumps({'model':MODEL_ID,'missing_paths':missing,'state':'missing_assets' if missing else 'paths_present','note':'path check only; no model or dataset validation'}))
         if missing:raise SystemExit(2)
@@ -65,22 +63,6 @@ def main():
         try:versions[pkg]=importlib.metadata.version(pkg)
         except importlib.metadata.PackageNotFoundError:pass
     (a.output_dir/'model_environment.json').write_text(json.dumps({'python':sys.version,'device':str(device),'packages':versions},indent=2))
-    if KIND=='artwork':
-        from PIL import Image
-        import numpy as np,time
-        with Image.open(a.image) as image:inputs=processor(images=image.convert('RGB'),return_tensors='pt')
-        inputs={k:v.to(device) for k,v in inputs.items()}
-        with torch.inference_mode():
-            for _ in range(WARMUP_STEPS):model(**inputs)
-            api.synchronize(device)
-            begin,end=api.Event(enable_timing=True),api.Event(enable_timing=True)
-            begin.record();outputs=model(**inputs);end.record();end.synchronize()
-        logits=outputs.logits
-        if not torch.isfinite(logits).all():raise ValueError('Nonfinite output')
-        np.save(a.output_dir/'logits.npy',logits.float().cpu().numpy())
-        (a.output_dir/'inference_summary.json').write_text(json.dumps({'model':model_info,'scope':'demo_only','image':str(a.image),'forward_ms':begin.elapsed_time(end),'scoring_status':'unavailable_no_traceable_gt'},indent=2))
-        (a.output_dir/'inference_output.json').write_text(json.dumps({'state':'completed','task':'classification','bundles':[],'scoring_status':'unavailable_no_traceable_gt'},indent=2))
-        print('Artwork demo complete; no GT or accuracy claimed',a.output_dir);return
     from inference.data import load,LimitedImages
     dataset,categories,dataset_info=load(a.dataset_root,model)
     if a.max_samples is not None:

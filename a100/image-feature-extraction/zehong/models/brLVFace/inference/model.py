@@ -7,7 +7,7 @@ GPU_ID = '0'
 MODEL_ID = 'bytedance-research/LVFace'
 NETWORK = 'vit_b_dp005_mask_005'
 WEIGHT_FILE = 'LVFace-B_Glint360K/LVFace-B_Glint360K.pt'
-LVFACE_REPO = Path(__file__).resolve().parent / 'vendor/LVFace'
+LVFACE_REPO = Path(__file__).resolve().parent / 'upstream/LVFace'
 BUNDLE_DIR = (Path(__file__).resolve().parents[5] / 'dataset' / 'LVdataset/ijbb_bundle_1000')
 BATCH_SIZE = 64
 NUM_WORKERS = 8
@@ -22,7 +22,7 @@ import numpy as np
 import torch
 from huggingface_hub import snapshot_download
 # Use the vendored package directly; do not shadow inference/ with vendor/LVFace/inference.py.
-from .vendor.LVFace.backbones import get_model
+from .upstream.LVFace.backbones import get_model
 from inference.utils.evaluate_model import evaluate_model
 from inference.utils.print_model_info import print_model_and_environment
 from inference.utils.protocol import checkpoint_fingerprints, sha256_file
